@@ -1,17 +1,17 @@
 [tool.poetry]
-name = "project_x"
-version = "0.1.0"
+name = "{{cookiecutter.project_slug}}"
+version = "{{cookiecutter.project_version}}"
 description = ""
 license = "MIT"
-authors = ["Your Name <you@example.com>"]
+authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
 readme = 'README.md'
-repository = "https://github.com/sudomaze/project_x"
-homepage = "https://github.com/sudomaze/project_x"
+repository = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}"
+homepage = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}"
 keywords = ['pytorch', 'pytorch-lightning']
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/sudomaze/project_x/issues"
-"Changelog" = "https://github.com/sudomaze/project_x/blob/master/CHANGELOG.md"
+"Bug Tracker" = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/issues"
+"Changelog" = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/blob/master/CHANGELOG.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"

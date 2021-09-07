@@ -5,7 +5,6 @@ import sys
 from rich import print, pretty, inspect, traceback
 pretty.install()
 traceback.install()
-# sys.path.insert(0, os.path.abspath(f"../project_x"))
 import os
 import yaml
 import string
