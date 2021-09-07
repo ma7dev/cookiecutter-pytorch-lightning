@@ -29,6 +29,7 @@ visdom = "^0.1.8"
 jsonpatch = "^1.32"
 rich = "^10.9.0"
 wandb = "^0.12.1"
+cookiecutter = "^1.7.3"
 
 [tool.isort]
 profile = "black"
@@ -39,16 +40,6 @@ line-length = 120 # override the default of 88
 [tool.poetry.scripts]
 train = "scripts.train:train"
 test = "scripts.test:test"
-
-# [tool.poe.tasks]
-# test = { "cmd" = "pytest tests --cov=. --cov-report term-missing", "help" = "Run all tests and get Code Coverage Report" }
-# test-postman = { "cmd" = "pytest tests/test_postman.py", "help" = "Run only tests against Postman" }
-# lint = [{ "ref" = "_lint-syntax" }, { "ref" = "_lint-full" }]
-
-# # private tasks
-# _lint-syntax = { "cmd" = "flake8 ./pyclinic ./tests --select=E9,F63,F7,F82 --show-source", "help" = "Lint for syntax error and undefined names" }
-# _lint-full = { "cmd" = "flake8 ./pyclinic ./tests --exit-zero --max-complexity=10", "help" = "Lint for style, complexity, and everything else" }
-
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
