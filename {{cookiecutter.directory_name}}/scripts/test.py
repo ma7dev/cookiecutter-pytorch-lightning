@@ -16,7 +16,7 @@ from pytorch_lightning import loggers
 
 from {{cookiecutter.project_slug}}.pl import LitDataset, LitModel
 
-def test(config_path: str = "./config/experiments.yml", job: str = "main",checkpoint_path:str = "outputs/checkpoints/E41JR_main_256_0.001_10/epoch=9-step=1759-v9.ckpt"):
+def test(config_path: str = "./config/experiments.yml", job: str = "main",checkpoint_path:str = "outputs/checkpoints/E41JR_main_256_0.001_10/epoch=9-step=1759.ckpt"):
     # seed
     pl.seed_everything(1)
     np.random.seed(1)
