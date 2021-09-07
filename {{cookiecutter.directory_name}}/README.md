@@ -2,7 +2,7 @@
 
 ## Setup
 
-- Install [Conda (miniconda)](https://conda.io/miniconda.html) & [Poetry](https://python-poetry.org/docs/getting-started/installation/):
+- Install [Conda (miniconda)](https://conda.io/miniconda.html) & [Poetry](https://python-poetry.org/docs/#installation):
 - Build and activate environment:
 ```bash
 conda env create -f environment.yml
