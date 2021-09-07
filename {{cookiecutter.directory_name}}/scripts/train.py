@@ -16,9 +16,9 @@ from pytorch_lightning import loggers
 from pytorch_lightning.callbacks import ModelCheckpoint,LearningRateMonitor
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 
-from {{cookiecutter.project_name}}.utils import utils
+from {{cookiecutter.project_slug}}.utils import utils
 
-from {{cookiecutter.project_name}}.pl import LitDataset, LitModel
+from {{cookiecutter.project_slug}}.pl import LitDataset, LitModel
 
 def train(config_path: str = "./config/experiments.yml", job: str = "main"):
     # seed
