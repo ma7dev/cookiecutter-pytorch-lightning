@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "{{cookiecutter.project_name}}"
+version = "{{cookiecutter.project_version}}"
+description = ""
+license = "MIT"
+authors = ["{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>"]
+readme = 'README.md'
+repository = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}"
+homepage = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}"
+keywords = ['pytorch', 'pytorch-lightning']
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/issues"
+"Changelog" = "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_name}}/blob/master/CHANGELOG.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyYAML = "^5.4.1"
+fire = "^0.4.0"
+tensorboard = "^2.6.0"
+jupyter = "^1.0.0"
+albumentations = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pylint = "^2.10.2"
+autopep8 = "^1.5.7"
+visdom = "^0.1.8"
+jsonpatch = "^1.32"
+rich = "^10.9.0"
+wandb = "^0.12.1"
+cookiecutter = "^1.7.3"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120 # override the default of 88
+
+[tool.poetry.scripts]
+train = "scripts.train:train"
+test = "scripts.test:test"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

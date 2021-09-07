@@ -1,0 +1,10 @@
+DATA_PATH: "./data"
+OUTPUT_PATH: "./outputs"
+PROJECT: "CIFAR10"
+
+main:
+  BATCH_SIZE: 256
+  LEARNING_RATE: 1e-3
+  MAX_EPOCH: 10
+  NUM_WORKERS: 10
+  GPUS: 1
