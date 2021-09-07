@@ -12,6 +12,12 @@ source activate {{cookiecutter.project_slug}}
 ```bash
 poetry install
 ```
+- Create an account on [Weights and Biases](https://wandb.ai)
+- Setup Weights and Biases:
+```bash
+wandb login
+```
+
 
 ## Commands
 
