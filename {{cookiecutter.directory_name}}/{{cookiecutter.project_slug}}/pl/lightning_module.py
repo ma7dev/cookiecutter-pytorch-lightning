@@ -13,7 +13,7 @@ import numpy as np
 import pytorch_lightning as pl
 import torchmetrics
 import torch.nn.functional as F
-from project_x.models.simple_classifier import Model
+from {{cookiecutter.project_slug}}.models.simple_classifier import Model
 class LitModel(pl.LightningModule):
     def __init__(self, input_shape, num_classes, data_len, learning_rate,chkpt_path=""):
         super().__init__()
